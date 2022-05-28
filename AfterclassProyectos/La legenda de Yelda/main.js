@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let nivel = 1
     //defino funciones 
     const encuentro = () =>{
-        factorRandom = Math.floor(Math.random() * 5) + 1;
+        factorRandom = Math.ceil(Math.random() * 5) + 1;
 
         if(factorRandom == 1){
             alert('te comiste un hongo venenoso pierdes 5 de vida')
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(XP)
     }
 
-    alert('!!!GAME OVER!!!')
+ 
 
  }, false);
 

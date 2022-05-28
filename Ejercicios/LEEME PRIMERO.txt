@@ -1,0 +1,29 @@
+TRATEN DE HACER LOS EJERCICIOS POR SU CUENTA ANTES DE REVISAR LAS RESPUESTAS
+
+Ejercicio 1:
+dana una lista de numeros y un numero k regresar si cualquiera de los dos numeros de la lista sumados son 
+iguales a k 
+por ejemplo si la lista es de [10, 15, 3, 7] y k es 17 deberia retornar verdadero ya que 10 + 7 es igual a k
+Extra: puedes hacerlo con un sola iteracion a la lista
+
+Ejercicio 2:
+dado un array de enteros, regresar un nuevo array en el que cada elemento al indice i es el producto de todos los numeros del array excepto
+por el que antes estaba en i
+Ejemplo: si te dan [1, 2, 3, 4, 5] el resultado esperado deberia ser [120, 60, 40, 30, 24]
+Ejemplo 2: si te dan [3, 2, 1] el resultado esperado deberia ser [2, 3, 6]
+Extra: que harias si te dicen que no hacer ninguna division
+
+Ejercicio 3:
+hacer una funcion que reciba un numero entero e identifique si es o no un palindrimo, es decir que termina igual que como empieza
+Ejemplos:
+123321 es palindromo
+233312 no es palindromo
+4567654 es palindromo 
+Extra: puedes hacerlo tambien con strings ? ejemplo: 'Anita lava la tina', seria un palindromo
+
+Ejercicio 4: 
+hacer un funcion que reciba un entero y lo revierta, es decir si recibes 12345 deberia retornar 54321
+Extra: puedes hacerlo tambien con strings ? 
+
+Ejercicio 5: 
+hacer una funcion que reciba un numero romano y lo convierta a un numero entero ejemplo: MCMLXXXIX deberia retornar 1989

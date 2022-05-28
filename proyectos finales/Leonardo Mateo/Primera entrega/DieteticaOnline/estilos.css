@@ -1,0 +1,12 @@
+body{background-color: rgb(34, 34, 34)}
+#titulo{background-color: whitesmoke;text-align: center;padding:0 auto;padding-top: 30px;padding-bottom: 30px;margin:0 auto;}
+.barranavegador{background-color: black;}
+.nav-link{color: aliceblue;font-size:30px;text-align: center;padding-left: 270px;}
+.texto1{color: aliceblue;text-align: center;}
+.piedepagina{background-color: aliceblue;height: 200px;position: relative;}
+.mapa{position:absolute; top: 0%;left:60%;}
+ul,li{list-style: none;padding: 0px;}
+.ubicacion{position: absolute;top: 0%;left: 75%;font-size: 20px;}
+.fab{color: black;font-size: 20px;padding-top: 10px;}
+.arg{padding-top: 8px;font-weight: inherit;}
+.imageninicio{max-width: 100%;height: auto;background-color: white;}

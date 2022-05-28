@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //declaracion de funciones
     function ingresarFondos(ingreso){
         if(ingreso > 0){
-            totalCuenta += ingreso
+            totalCuenta += ingreso // totalCuenta = totalCuenta + ingreso
             alert(`ingresaste ${ingreso} el total de tu cuenta es de ${totalCuenta}`)
         }else{
             alert('no puedes ingresar fondos menores a 0')
