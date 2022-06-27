@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
     function ingresarFondos(ingreso){
         if(ingreso > 0){
             totalCuenta += ingreso // totalCuenta = totalCuenta + ingreso
-            alert(`ingresaste ${ingreso} el total de tu cuenta es de ${totalCuenta}`)
+            Swal.fire(`ingresaste ${ingreso} el total de tu cuenta es de ${totalCuenta}`)
         }else{
-            alert('no puedes ingresar fondos menores a 0')
+            Swal.fire('no puedes ingresar fondos menores a 0')
         }
     }
     function retirarFondos(egreso){
         if(egreso > 0 && egreso<totalCuenta){
             totalCuenta -= egreso
-            alert(`retiraste ${egreso} te quedan ${totalCuenta} en tu cuenta`)
+            Swal.fire(`retiraste ${egreso} te quedan ${totalCuenta} en tu cuenta`)
         }else if(egreso < 0){
-            alert('no puedes retirar fondos menores a 0')
+            Swal.fire('no puedes retirar fondos menores a 0')
         }else{
-            alert('no tienes fondos para hacer este retiro')
+            Swal.fire('no tienes fondos para hacer este retiro')
         }
     }
     function validarUserYPass(user,pass){
@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
         let pass = prompt('ingrese su contraseña: ')
         let validacion = validarUserYPass(user,pass)
         if(validacion){
-            alert('Bienvenidos a su banco')
+            Swal.fire('Bienvenidos a su banco')
             while(variableDeLoop){
                 accion = prompt('escriba "Ver" para ver su cuenta,\n"Ingresar" para ingresar fondos a su cuenta, \n"Retirar" para retirar fondos a su cuenta o\n"Salir" para terminar sus operaciones')
                 if(accion == 'Ver'){
-                    alert('su saldo total es de: ' + totalCuenta)
+                    Swal.fire('su saldo total es de: ' + totalCuenta)
                 }else if(accion == 'Ingresar'){
                     let ingreso = parseInt(prompt('ingrese el monto que desea agregar a su cuenta: '))
                     ingresarFondos(ingreso)
@@ -49,15 +49,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     let retiro = parseInt(prompt('ingrese el monto que desea retirar de su cuenta: '))
                     retirarFondos(retiro)
                 }else if(accion == 'Salir'){
-                    alert('gracias por usar BancoBrando')
+                    Swal.fire('gracias por usar BancoBrando')
                     variableDeLoop = false
                 }else{
-                    alert('no entendi la orden quieres intentarlo otra vez')
+                    Swal.fire('no entendi la orden quieres intentarlo otra vez')
                 }
             }
             break
         }else{
-            alert('contraseña incorrecta le quedan ' + (3-i) + ' intentos')
+            Swal.fire('contraseña incorrecta le quedan ' + (3-i) + ' intentos')
         }
     }
  }, false);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="botones">
+        <button type="submit" id="btn1">yo uso el event listener</button><br><br>
+        <button type="submit" id="btn2">yo uso el event handler</button><br><br>
+        <button type="submit" id="btn3" onclick="alert('OH NOOOO ESTOY DENTRO DE UN TAG EN EL HTML !!!!!!!!!!!')">yo tambien uso el event handler pero con malas practicas</button><br><br>
+    </div>
+    <div>
+        <label for="unInput">Evento Input</label>
+        <input type="text" name="unInput" id="inpEjemplo" title="" placeholder="coloque datos">
+    </div>
+    <div>
+        <form action="" method="post" id="formulario">
+            <label for="nomb">Nombre:</label>
+            <input type="text" name="nomb" id="forin1" title="nombre" placeholder="tu nombre aqui">
+            <label for="apell">Apellido:</label>
+            <input type="text" name="" id="forin2" title="apellido" placeholder="tu apellido aqui">
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="forin3" title="edad" placeholder="0">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div id="busqueda">
+        <label for="inputB" id="lblB">busqueda:</label>
+        <input type="text" name="" id="inputB">
+        <br><br>
+        <br><br>
+        <div id="listaCompras">
+
+        </div>
+    </div>
+    <div>
+        <br><br>
+        <button type="submit" id="comprar">carrito</button><p id="cantProd">cantidad de productos: 0</p>
+    </div>
+    <script src="error.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+| funciona como un OR
+() setea un grupo
+^ matchea el inicio de la linea
+^$ matchea todo el conjunto
+[]matchea cualquier elemento dentro de los corchetes o en el rango de los corchetes
++ debe habe uno o mas de los caracteres a la izquierda de mas 
+{}es el contador de caracteres
+{x}matcheara si la cantidad de elementos es igual a x
+{x,}matcheara si la cantidad de elementos es mayor o igual a x
+{x,y}matcheara si la cantidad de elementos esta entre x y y
+. es un comodin 
+\d matchea los numeros del uno al nuevo pero cuidado tambien matchea cualquier numero de alfabetos extranjeros
+\w matchea cualquier letra

@@ -1,0 +1,14 @@
+li{
+    color:blue;
+}
+.li__especial{
+    color: aqua;
+    text-decoration: dotted;
+    text-align: justify;
+}
+.otro__li__especial{
+    cursor: crosshair;
+    text-transform: uppercase;
+    color: blueviolet;
+    text-align: right;
+}

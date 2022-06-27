@@ -1,0 +1,55 @@
+reglas por definir:
+
+{
+  "rules": {
+    "alumnos":{
+      ".read": true,
+    	".write": true
+      } 
+    }
+  }
+
+agregar usuario:
+
+metodo: POST
+https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={API_KEY}
+headers:
+"Content-Type":"application/json"
+{
+	"email":"pruebas@alumnos.com",
+	"password":"123456",
+	"returnSecureToken":true
+}
+
+verificar usuario:
+metodo: POST
+https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key={API_KEY}
+headers:
+"Content-Type":"application/json"
+{
+	"email":"pruebas@alumnos.com",
+	"password":"123456",
+	"returnSecureToken":true
+}
+
+
+// fetch('https://pruebasconreact-default-rtdb.firebaseio.com/test2.json',{
+//     method: 'POST',
+//     body: JSON.stringify({title:'pruebitas',body:'poketest'}),
+//     headers: {'Content-type':'application/json;charset=UTF-8'},
+// })
+// .then((resp)=>resp.json())
+// .then((data)=>{console.log(data)})
+
+// fetch('https://pruebasconreact-default-rtdb.firebaseio.com/test2/3.json')
+// .then((resp)=>resp.json())
+// .then((data)=>{
+//     document.write(data.body)
+// })
+
+// fetch('https://pruebasconreact-default-rtdb.firebaseio.com/test2/-N5WTSt4_CK1hebtDohg.json',{
+//     method: 'DELETE',
+//     headers: {'Content-type':'application/json;charset=UTF-8'},
+// })
+// .then((resp)=>resp.json())
+// .then((data)=>{console.log(data)})

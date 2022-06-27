@@ -1,0 +1,5 @@
+console.log(document.title)
+console.log(document.head.baseURI)
+console.log(document.URL)
+console.log(document.body.childNodes[3].childNodes[1].childNodes[5].innerText)
+console.log(document.body.childNodes[5].childNodes[1].childNodes[5].value = 'CODERHOUSE')

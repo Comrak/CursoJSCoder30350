@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pruebasPost.js" type="module"></script>
+</head>
+<body>
+    <div id="data">
+        <h1>Request para ver los datos</h1>
+        <h2 id="dataAqui"></h2>
+        <form action="" id="seeData">
+            <button type="submit" id="rescatarDatos">Ver Datos</button><br>
+        </form>
+    </div>
+    <div id="dataPorId">
+        <h1>Request para ver los datos por ID</h1>
+        <h2 id="dataAquiID"></h2>
+        <form action="" id="seeDataID">
+            <label for="idAlumno">ID del alumno:</label><br>
+            <input type="text" id="idAlumno"><br>
+            <button type="submit" id="rescatarDatos">Ver Datos del alumno</button><br>
+        </form>
+    </div>
+    <div id="addData">
+        <h1>Request para agregar nuevos datos</h1>
+        <h2 id="datoAdd"></h2>
+        <form action="" id="AgregarDatos">
+            <label for="nombreAlumno">Nombre Alumno:</label><br>
+            <input type="text" id="nombreAlumno"><br>
+            <label for="edadAlumno">Edad Alumno:</label><br>
+            <input type="text" id="edadAlumno"><br>
+            <label for="calificacionAlumno">Calificacion Alumno:</label><br>
+            <input type="text" id="calificacionAlumno"><br>
+            <button type="submit" id="btnAgregarDatos">Agregar Datos</button><br>
+        </form>
+    </div>
+    <div id="editData">
+        <h1>Request para editar los datos</h1>
+        <h2 id="editarDatosMsg"></h2>
+        <form action="" id="editarDatos">
+            <label for="idDatos">Id a modificar:</label><br>
+            <input type="text" id="idDatos"><br>
+            <label for="editNombreAlumno">Nombre Alumno:</label><br>
+            <input type="text" id="editNombreAlumno"><br>
+            <label for="editEdadAlumno">Edad Alumno:</label><br>
+            <input type="text" id="editEdadAlumno"><br>
+            <label for="editCalificacionAlumno">Calificacion Alumno:</label><br>
+            <input type="text" id="editCalificacionAlumno"><br>
+            <button type="submit" id="btnEditDatos">Editar Datos</button><br>
+        </form>
+    </div>
+    <div id="delData">
+        <h1>Request para eliminar los datos</h1>
+        <h2 id="delDataMsg"></h2>
+        <form action="" id="delDatos">
+            <label for="idDelDatos">Id a eliminar:</label><br>
+            <input type="text" id="idDelDatos"><br>
+            <button type="submit" id="btnDelDatos">Eliminar Datos</button><br>
+        </form>
+    </div>
+    <div id="User">
+        <h1>Request para agregar usuario</h1>
+        <h2 id="bearerAdd"></h2>
+        <form action="" id="addUser">
+            <label for="userMail">Email Usuario:</label><br>
+            <input type="text" id="userMail"><br>
+            <label for="userPass">Password Usuario:</label><br>
+            <input type="password" id="userPass"><br>
+            <button type="submit" id="btnAddUser">Agregar Usuario</button><br>
+        </form>
+    </div>
+    <div id="validateUser">
+        <h1>Request para validar usuario</h1>
+        <h2 id="bearer"></h2>
+        <form action="" id="valUser">
+            <label for="valUserMail">Email Usuario:</label><br>
+            <input type="text" id="valUserMail"><br>
+            <label for="valUserPass">Password Usuario:</label><br>
+            <input type="password" id="valUserPass"><br>
+            <button type="submit" id="btnValUser">Validar Usuario</button><br>
+        </form>
+    </div>
+</body>
+</html>
